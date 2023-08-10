@@ -1,0 +1,480 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<style>@import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Rubik:700';
+
+@page {
+    size: 8.5in 11in;
+    margin: 0.75in 0.75in 0.75in 0.75in;
+}
+
+:root {
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 8.5in;
+    height: 11in;
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #444;
+    hyphens: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+h4,
+h5,
+h6 {
+    letter-spacing: .3px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 0.5rem 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: #008CFF;
+}
+
+small {
+    font-size: 0.8rem;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.block {
+    margin-bottom: 2rem;
+}
+
+.block.boxed {
+    border-bottom: 1px dashed #e2e7e8;
+}
+
+.block:last-child {
+    margin-bottom: 0;
+}
+
+.block h2 {
+    text-transform: uppercase;
+    border-bottom: 3px solid #384347;
+    margin-bottom: 1rem;
+}
+
+#content {
+    padding: 0 1rem 0 0;
+    width: 70%;
+}
+
+#sidebar {
+    padding: 0 0 3.08rem 1rem;
+    width: 30%;
+    position: relative;
+}
+
+#heading {
+    display: flex;
+}
+
+#heading .info {
+    width: calc(100% - 120px);
+    padding-right: 1rem;
+}
+
+#heading .image {
+    width: 120px;
+}
+
+#heading .image img {
+    border-radius: .4rem;
+    margin-left: auto;
+}
+
+#heading h1 {
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+}
+
+#heading span {
+    font-size: 1.5rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    color: #008CFF;
+}
+
+#heading i {
+    color: #008CFF;
+}
+
+#heading .links {
+    display: table;
+    margin: 1rem 0 2rem;
+    width: 100%;
+}
+
+#heading .links ul {
+    display: table-row;
+}
+
+#heading .links ul li {
+    display: table-cell;
+}
+
+#heading a {
+    color: #384347;
+    text-decoration: none;
+}
+
+.job header ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.job header li {
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.job header li:first-child {
+    text-align: left;
+}
+
+.job header li:last-child {
+    text-align: right;
+}
+
+.job .details ul {
+    list-style: disc;
+    padding-left: 2rem;
+}
+
+.job .place {
+    color: #008CFF;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+}
+
+.job .place a {
+    text-decoration: none;
+}
+
+.job h3 {
+    margin-bottom: 0.25rem;
+}
+
+.job h4 {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.job h4 + p,
+.job h4 + ul {
+    margin-top: 0;
+}
+
+.rate-item {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rate-item h5 {
+    margin-bottom: 0;
+}
+
+.rate {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.rate span {
+    width: 1.4rem;
+    height: .4rem;
+    border-radius: .4rem;
+    background: #e2e7e8;
+}
+
+.rate span.fill {
+    background: #008CFF;
+}
+
+#repo {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    right: 0;
+    font-size: 0.8rem;
+}
+</style>
+<header id="heading">
+    <div class="info"><h1>Erfan Khavarian</h1><span>Back-End Developer</span>
+        <div class="links">
+            <ul>
+                <li><a href="mailto:erfun.kh@gmail.com" target="_blank"><i class="fa fa-at"></i> erfun.kh@gmail.com</a>
+                </li>
+                <li><a href="tel:+905365612881" target="_blank"><i class="fa fa-phone"></i> +90 536 561 28 81</a></li>
+                <li><i class="fa fa-map-marker"></i>
+                    Istanbul, Turkey
+                </li>
+            </ul>
+            <ul>
+                <li><a href="https://github.com/erfun-kh" target="_blank"><i class="fa fa-github"></i>
+                    github.com/erfun-kh</a></li>
+                <li><a href="https://www.linkedin.com/in/erfunkh" target="_blank"><i class="fa fa-linkedin"></i>
+                    linkedin.com/in/erfunkh</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="image"><img src="./avatar.jpg" width="120" height="120"/></div>
+</header>
+<main>
+    <article id="content">
+        <div class="block boxed"><h2>Summary</h2>
+            <p>People in my environment qualify me as determined, reliable, positive, energetic and social. Over the
+                course of the years, I’ve gained a lot of experience in development. When a platform is developed well,
+                there is a stability in the company. My drive is to take care of having a safe, stable and great working
+                platform. With my experience, I’ve developed the capability to anticipate when troubles arise. For the
+                future, I hold the ambition to play a role in development.</p></div>
+        <div class="block"><h2>Experience</h2>
+            <div class="block boxed job">
+                <header><h3>GO/PHP/Back-End Developer</h3><span class="place"></span>
+                    <ul>
+                        <li><span class="place">Freelancer</span></li>
+                        <li><i class="fa fa-calendar"></i>
+                            08/2017 - Ongoing
+                        </li>
+                        <li><i class="fa fa-map-marker"></i>
+                            Istanbul, Turkey
+                        </li>
+                    </ul>
+                </header>
+                <div class="details"><p>Designed and developed WordPress websites and RESTful API services with best
+                    practice techniques.</p><h4>Missions:</h4>
+                    <ul>
+                        <li>Collaborated with co-workers to establish backend conventions, principles, and patterns.
+                        </li>
+                        <li>Collaborated with cross-functional teams</li>
+                        <li>Collaborated with frontend developers to see projects through, from conception to
+                            completion
+                        </li>
+                        <li>Designed and implemented data storage solutions</li>
+                        <li>Drove new and innovative solutions to meet business needs</li>
+                        <li>Implemented security and data protection</li>
+                        <li>Helped to develop and maintain applications</li>
+                        <li>comprehend new technological solutions and implement them to resolve specific client
+                            requests
+                        </li>
+                    </ul>
+                    <h4>Main projects:
+                        <li>Use and mandate best practices in software development, including MVC pattern and RESTful
+                            Web Services
+                        </li>
+                        <li>Developed responsive content-based website with Wordpress that contain dynamic contents
+                            depending on users choice.
+                        </li>
+                        <li>Dockerize product for the run app on any infrastructure, quickly and reliably.</li>
+                    </h4>
+                </div>
+            </div>
+            <div class="block boxed job">
+                <header><h3>Back-End Developer</h3><span class="place"></span>
+                    <ul>
+                        <li>at
+                            <span class="place"><a href="https://www.faranesh.com">Faranesh</a></span></li>
+                        <li><i class="fa fa-calendar"></i>
+                            05/2016 - 08/2017
+                        </li>
+                        <li><i class="fa fa-map-marker"></i>
+                            Tehran, Iran
+                        </li>
+                    </ul>
+                </header>
+                <div class="details"><p>Faranesh is a leading Online Video Learning Marketplace in Iran. Faranesh
+                    provide relevant and immediately applicable education for individuals and organization to build up
+                    career skills with over 4000 courses and more than 9000 hours of professional video tutorials.</p>
+                    <h4>Missions:</h4>
+                    <ul>
+                        <li>Built reusable code and libraries for future use</li>
+                        <li>Optimized the application for maximum speed and scalability</li>
+                        <li>Troubleshooted and solved complex problems</li>
+                        <li>Developed test drive/test first unit tests</li>
+                        <li>Worked closely with Designers, Customer Support and QA to develop suite of web tools for
+                            internal and external users
+                        </li>
+                        <li>Worked closely with product managers, editorial and business partners to understand software
+                            requirements
+                        </li>
+                    </ul>
+                    <h4>Main projects:</h4>
+                    <ul>
+                        <li>Code Refactoring from MVC with native PHP to service-oriented architecture with Laravel and
+                            Lumen frameworks.
+                        </li>
+                        <li>Developed multiple microservices bases on Faranesh service-oriented architecture</li>
+                        <li>Develop APIs and clear documentation for the Faranesh dashboard, third-party business, and
+                            mobile app.
+                        </li>
+                        <li>Develop scalable, secure, tested and reliable web application for a distributed SOA
+                            environment
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block boxed job">
+                <header><h3>Full-Stack developer</h3><span class="place"></span>
+                    <ul>
+                        <li>at
+                            <span class="place">AtlasTalaie</span></li>
+                        <li><i class="fa fa-calendar"></i>
+                            05/2014 - 05/2016
+                        </li>
+                        <li><i class="fa fa-map-marker"></i>
+                            Tehran, Iran
+                        </li>
+                    </ul>
+                </header>
+                <div class="details"><p>Atlas Talaie is an Iranian Import company which work B2B with Iranian cosmetic
+                    companies and businesses.</p><h4>Main projects:</h4>
+                    <ul>
+                        <li>Develop event organizers dashboard with Laravel</li>
+                        <li>Develop a online e-shop with OpenCart</li>
+                        <li>Develop a Telegram bot improve CRM.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </article>
+    <aside id="sidebar">
+        <div class="block"><h2>Tools/Skills</h2>
+            <div class="block boxed rate-item">
+                <h5>Programing Language<br/>
+                    <small>PHP/GoLang</small>
+                </h5><!--if rate.rate
+    each value, index in new Array(10)
+        span(class=rate > index ? 'fill' : '')--></div>
+            <div class="block boxed rate-item">
+                <h5>Framework<br/>
+                    <small>Laravel/Lumen/Codeigniter/gRPC</small>
+                </h5><!--if rate.rate
+    each value, index in new Array(10)
+        span(class=rate > index ? 'fill' : '')--></div>
+            <div class="block boxed rate-item">
+                <h5>Version controllers<br/>
+                    <small>Git SCM</small>
+                </h5><!--if rate.rate
+    each value, index in new Array(10)
+        span(class=rate > index ? 'fill' : '')--></div>
+            <div class="block boxed rate-item">
+                <h5>Package manager<br/>
+                    <small>Composer/NPM</small>
+                </h5><!--if rate.rate
+    each value, index in new Array(10)
+        span(class=rate > index ? 'fill' : '')--></div>
+            <div class="block boxed rate-item">
+                <h5>Testing<br/>
+                    <small>Functional Test/Unit-Test/Integration-Test, TDD and BDD frameworks</small>
+                </h5><!--if rate.rate
+    each value, index in new Array(10)
+        span(class=rate > index ? 'fill' : '')--></div>
+            <div class="block boxed rate-item">
+                <h5>HTML5/CSS3/Javascript<br/>
+                    <small>+ jQuery, HTML DOM, SASS/LASS, Gulp</small>
+                </h5><!--if rate.rate
+    each value, index in new Array(10)
+        span(class=rate > index ? 'fill' : '')--></div>
+            <div class="block boxed rate-item">
+                <h5>Software architectural style<br/>
+                    <small>SOA/RESTful API/Microservice</small>
+                </h5><!--if rate.rate
+    each value, index in new Array(10)
+        span(class=rate > index ? 'fill' : '')--></div>
+            <div class="block boxed rate-item">
+                <h5>Dev-Ops tools<br/>
+                    <small>Docker/Gitlab-ci/Nginx</small>
+                </h5><!--if rate.rate
+    each value, index in new Array(10)
+        span(class=rate > index ? 'fill' : '')--></div>
+            <div class="block boxed rate-item">
+                <h5>Web Server<br/>
+                    <small>Nginx/Apache</small>
+                </h5><!--if rate.rate
+    each value, index in new Array(10)
+        span(class=rate > index ? 'fill' : '')--></div>
+            <div class="block boxed rate-item">
+                <h5>Database<br/>
+                    <small>MySQL/MariaDB/PostgreSQL/Elasticsearch/Redis/InfluxDB/</small>
+                </h5><!--if rate.rate
+    each value, index in new Array(10)
+        span(class=rate > index ? 'fill' : '')--></div>
+            <div class="block boxed rate-item">
+                <h5>Project Management Methodologies<br/>
+                    <small>Agile/Scrum</small>
+                </h5><!--if rate.rate
+    each value, index in new Array(10)
+        span(class=rate > index ? 'fill' : '')--></div>
+            <div class="block boxed rate-item"><h5>OOP/SOLID/PSR</h5><!--if rate.rate
+    each value, index in new Array(10)
+        span(class=rate > index ? 'fill' : '')--></div>
+            <div class="block boxed rate-item">
+                <h5>OS<br/>
+                    <small>Mac/Linux/Windows</small>
+                </h5><!--if rate.rate
+    each value, index in new Array(10)
+        span(class=rate > index ? 'fill' : '')--></div>
+        </div>
+    </aside>
+</main>
+</body>
+</html>

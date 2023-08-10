@@ -1,0 +1,15 @@
+stages:
+  - build
+
+build-resume:
+  stage: build
+  image: buildkite/puppeteer:v3.0.4
+  cache:
+    paths:
+      - node_modules/
+  artifacts:
+    paths:
+      - resume.pdf
+  script:
+    - npm install
+    - npm run make

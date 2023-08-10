@@ -1,0 +1,119 @@
+include mixins.pug
+style
+    include:scss resume.scss
+
+header#heading
+    .info
+        h1 My full name
+        span Back-End Developer
+
+        .links
+            ul
+                li
+                    a(href='mailto:me@gmail.com', target='_blank') #[+i('at')] me@gmail.com
+                li
+                    a(href='tel:+989123456789', target='_blank') #[+i('phone')] +98 912 345 6789
+                li
+                    +i('map-marker')
+                    |
+                    | Tehran, Iran
+            ul
+                li
+                    a(href='https://github.com/username', target='_blank') #[+i('github')] github.com/username
+                li
+                    a(href='https://www.linkedin.com/in/username', target='_blank') #[+i('linkedin')] linkedin.com/in/username
+
+
+    .image
+        img(src='./avatar.jpg', width=120, height=120)
+
+main
+    article#content
+        +block('Summary')
+            p People in my environment qualify me as determined, reliable, positive, energetic and social. Over the course of the years, I’ve gained a lot of experience in development. When a platform is developed well, there is a stability in the company. My drive is to take care of having a safe, stable and great working platform. With my experience, I’ve developed the capability to anticipate when troubles arise. For the future, I hold the ambition to play a role in development.
+
+
+        +block('Experience', false)
+            +job("Senior Back-End Developer", "Inclusive Development", "https://mysite.com", "08/2019 - Ongoing", "Tehran, Iran")
+                p Company is a leading application of new technological advancements to products and services in the financial industry.
+
+                    h4 Missions:
+                    ul
+                        li Collaborated with co-workers to establish backend conventions, principles, and patterns.
+                        li Collaborated with cross-functional teams.
+                        li Collaborated with Android developers to see projects through, from conception to completion.
+                        li Designed and implemented data storage solutions.
+                        li Drove new and innovative solutions to meet business needs.
+                        li Implemented security and data protection.
+                        li Helped to develop and maintain applications.
+                        li comprehend new technological solutions and implement them to resolve specific Agri-Bank requests.
+
+                    h4 Main projects:
+                        li Use and mandate best practices in software development, including RESTful Web Services.
+                        li Dockerize product for the run app on any infrastructure, quickly and reliably.
+
+            +job("Senior Back-End Developer", "Freelancer", "", "08/2017 - 08/2019", "Tehran, Iran", false)
+                p Designed and developed Microservice and RESTful API services with best practice techniques.
+
+                h4 Missions:
+                ul
+                    li Collaborated with co-workers to establish backend conventions, principles, and patterns.
+                    li Collaborated with cross-functional teams.
+                    li Collaborated with frontend developers to see projects through, from conception to completion.
+                    li Designed and implemented data storage solutions.
+                    li Drove new and innovative solutions to meet business needs.
+                    li Implemented security and data protection.
+                    li Helped to develop and maintain applications.
+                    li comprehend new technological solutions and implement them to resolve specific client requests.
+
+                h4 Main projects:
+                    li Use and mandate best practices in software development, including Microservice and RESTful Web Services.
+                    li Developed responsive content-based website with Wordpress that contain dynamic contents depending on users choice.
+                    li Dockerize product for the run app on any infrastructure, quickly and reliably.
+
+            +job("Back-End Developer", "Faranesh", "https://faranesh.com", "05/2016 - 08/2017", "Tehran, Iran")
+                p Faranesh is a leading Online Video Learning Marketplace in Iran. Faranesh provide relevant and immediately applicable education for individuals and organization to build up career skills with over 4000 courses and more than 9000 hours of professional video tutorials.
+
+
+                h4 Missions:
+                ul
+                    li Built reusable code and libraries for future use.
+                    li Optimized the application for maximum speed and scalability.
+                    li Troubleshooted and solved complex problems.
+                    li Developed test drive/test first unit tests.
+                    li Worked closely with Designers, Customer Support and QA to develop suite of web tools for internal and external users.
+                    li Worked closely with product managers, editorial and business partners to understand software requirements.
+
+                h4 Main projects:
+                ul
+                    li Code Refactoring from MVC with native PHP to service-oriented architecture with Laravel and Lumen frameworks.
+                    li Developed multiple microservices bases on Faranesh service-oriented architecture .
+                    li Developed APIs and clear documentation for the Faranesh dashboard, third-party business, and mobile app.
+                    li Developed scalable, secure, tested and reliable web application for a distributed SOA environment.
+
+            +job("Full-Stack developer", "company", "", "05/2014 - 05/2016", "Tehran, Iran")
+                p Company is an Iranian Import company which work B2B with Iranian cosmetic companies and businesses.
+
+                h4 Main projects:
+                ul
+                    li Developed event organizers dashboard with Laravel.
+                    li Developed an online e-shop with OpenCart
+                    li Developed a Telegram bot improve CRM.
+
+
+    aside#sidebar
+        +block('Tools/Skills', false)
+            +rateItem('Programing Language', 'PHP/GoLang', 9)
+            +rateItem('Framework', 'Laravel/Lumen/Codeigniter/gRPC', 9)
+            +rateItem('Version controllers', 'Git SCM', 9)
+            +rateItem('Package manager', 'Composer/NPM', 9)
+            +rateItem('Testing', 'Functional Test/Unit-Test/Integration-Test, TDD', 9)
+            +rateItem('HTML5/CSS3/Javascript', '+ jQuery, HTML DOM, SASS/LASS, Gulp')
+            +rateItem('Software architectural style', 'SOA/RESTful API/Microservice', 10)
+            +rateItem('Dev-Ops tools', 'Docker/Gitlab-ci', 9)
+            +rateItem('Database', 'MySQL/MariaDB/PostgreSQL/Elasticsearch/Redis/InfluxDB', 9)
+            +rateItem('OOP/SOLID/PSR', null, 10)
+            +rateItem('OS', 'Mac/Linux/Windows', 10)
+        +block('Languages', false)
+            +rateItem('English', null, 6)
+            +rateItem('Persian', null, 10)
